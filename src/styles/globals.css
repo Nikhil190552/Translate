@@ -1,90 +1,19 @@
-/* .container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.textarea {
-  width: 100%;
-  height: 150px;
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
   padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
-.button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+.heading {
+  font-size: 2rem;
 }
-
-.button:hover {
-  background-color: #0056b3;
-}
-
-.translated-text {
-  margin-top: 20px;
-}
-
-.error {
-  color: red;
-  margin-top: 20px;
-} */
-/* 
-.button-container {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.translate {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-}
-
-.clear {
-  background-color: #dc3545;
-  color: #fff;
-  border: none;
-}
-
-.button:hover {
-  opacity: 0.8;
-}
-
-.textarea {
-  width: 100%;
-  height: 150px;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.translated-text {
-  margin-top: 20px;
-}
-
-.error {
-  color: red;
-  margin-top: 20px;
-} */
 
 .container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  margin-top: 2rem;
 }
 
 .textarea {
@@ -94,18 +23,20 @@
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: aqua;
 }
 
 .button-container {
   margin-top: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .button {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .translate {
@@ -128,7 +59,39 @@
   margin-top: 20px;
 }
 
+.translated-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.translated-paragraph {
+  font-size: 1.2rem;
+}
+
 .error {
   color: red;
   margin-top: 20px;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .textarea {
+    height: 100px;
+    margin-bottom: 10px;
+    width: 95%;
+  }
+
+  .button-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
 }
